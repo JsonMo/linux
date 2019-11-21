@@ -1,0 +1,8 @@
+grep "abc" test  ---test文件中包含abc的行
+grep  -w "abc" test  ---test文件中等于abc的行 -w 精确匹配
+grep  -i -n "abc" test  ------- i 不区分大小写   -n 行数  
+grep -c "abc" test   --------包含abc的行数
+grep -B1 "年龄:18" test  ------从test中找出包含年龄：18的行，一级他的前一行  -B  前几行
+grep -A1 "年龄:18" test  ------从test中找出包含年龄：18的行，一级他的后一行  -A  后几行
+grep -C1 "年龄:18" test  ------从test中找出包含年龄：18的行，一级他的前一行和后一行  -c 前后几行
+grep -e "abc" -e "cdr" -------包含abc 或cdr任一一个都会显示出来 -e 同时匹配多个目标
