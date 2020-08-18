@@ -18,3 +18,10 @@
         }
 
     }
+    
+命令： 
+启动：
+./nginx -c /usr/local/nginx/conf/nginx.conf
+
+重载
+./nginx -s reload
